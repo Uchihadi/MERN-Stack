@@ -1,0 +1,31 @@
+<html>
+<head>
+    <style>
+        div ~ span {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>
+            I am the child of the div tag
+        </span><br>
+        <span>
+            I am another child of the div tag
+        </span><br>
+        <p>
+            <span> I am the grand child of the div tag</span>
+        </p>
+    </div>
+
+    <!-- Ths span after the div will be styled because of div ~ span -->
+    <span> I am the adjacent or the first sibling of the div tag</span><br>
+    <span>i am another sibling of the div tag</span>
+    <h1>
+            There are only 4 combinator <br>
+            > is the child combinator<br>space is the descendant combinator<br>
+            + is the adjacent sibling combinator<br>~ is the general sibling combinator<br>
+        </h1> 
+</body>
+</html>

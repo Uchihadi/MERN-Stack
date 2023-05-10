@@ -1,0 +1,103 @@
+<html>
+    <style>
+        table, td, tr {
+            border: 1px black solid;
+            border-collapse: collapse;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .Gray {
+            background-color: gray;
+        }
+
+        *{
+            font-family: cursive;
+        }
+
+        tr[id]{
+            color: orange;
+        }
+
+        #firstDiv .p1{
+            font-style: italic;
+            background-color: orange;
+         }
+
+         ol>li {
+            border-top: 3px solid aqua;
+        }
+        
+        h4 + p {
+            background-color: gray;
+            border-radius: 2px;
+            padding: 5px;
+            color: white;
+        }
+
+        h5 ~ p {
+            background-color: gray;
+            border-radius: 2px;
+            padding: 5px;
+            color: white;
+        }
+        
+    </style>
+
+    <body>
+        <table>
+        <tr class = "Gray">
+            <td> James </td> <td> 24 </td>
+        </tr>
+        <tr id = "pId">
+            <td> Jack </td> <td> 26 </td>
+        </tr>
+        <tr class = "Gray">
+            <td> James </td> <td> 25 </td>
+        </tr>
+        <tr>
+            <td> Janus </td> <td> 23</td>
+        </tr>
+    </table>
+
+    <!-- Descendant Combinator -->
+    <div id="firstDiv">
+        <p class="p1">This p tag is inside div tag</p> <!-- Selected -->
+        <span>
+            <p>This is p inside span which is inside div</p><!-- Not Selected -->
+        </span>
+    </div>
+    <p class="p1">This p tag is next to div tag</p><!-- Not selected -->
+
+    <!-- Child Combinator -->
+    <ol>
+        <li>
+            Front-End
+            <ul>
+                <li>React</li>
+                <li>Angular</li>
+            </ul>
+        </li>
+        <li>
+            Back-End
+            <ul>
+                <li>Node</li>
+                <li>Express</li>
+            </ul>
+        </li>
+    </ol>
+
+    <!-- Adjacent Sibling Combinator -->
+    <h4>Heading</h4>
+    <p>This is the paragraph next to the heading which has to be styled</p>
+    <p>This paragraph should not be styled</p>
+
+    <!-- General Sibling Combinator -->
+    <h5>Heading</h5>
+    <p> This is a paragraph </p>
+    <div> This is a div tag </div>
+    <p> This is another paragraph </p>
+
+    </body>
+    
+</html>
