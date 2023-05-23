@@ -3,7 +3,8 @@ const studentData = {
     name: "Jak",
     age: 24,
     angel: "abd",
-    marks: 60
+    marks: 60,
+    "lastname": "Johnson"
 }
 
 // Giving the array of entire values from the Object Data
@@ -22,4 +23,9 @@ console.log(studentData["age"]);
 // Iterating out each property and values from the Object using the for-let
 for (let prop in studentData) {
     console.log("Value for " + prop + " is " + studentData[prop]) //1) Property & 2) Value
+}
+
+// Object and "." method does not work in this case
+for (var property in studentData) {
+    console.log("Property: " + property + " " + studentData.property)
 }
