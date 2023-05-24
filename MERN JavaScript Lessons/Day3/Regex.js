@@ -1,5 +1,5 @@
 const greeting = "Welcome Shruti"
-const pattern = "^.*[t]"
+const pattern = "(We)*[jkl].*"
 
 
 // const isMatching2 = greeting.match("come") --> True
@@ -39,6 +39,12 @@ const pattern = "^.*[t]"
 // const pattern = "^.?e.+[t]$"
 // const pattern = "^[.]?e.+[t]"
 // const pattern = "^[.]*ti$"
+
+// const pattern = "(We)+[jkl].*"
+// const pattern = "(We)+[jkl].*"
+// const pattern = "(We)*[a-z].*"
+// const pattern = "(We)*[a-z0-9].*"
+// const pattern = "(We)*[a-z0-9]i?$"
 
 
 const isMatching = greeting.match(pattern)
