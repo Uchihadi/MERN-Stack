@@ -15,14 +15,14 @@ let empTwo = {
 let { a, ... rest }  = empTwo
 console.log(a,rest)
 
-// try {
-//     try {
-//       throw new Error('oops');
-//     }
-//     finally {
-//       console.log('finally');
-//     }
-//   }
-//   catch (ex) {
-//     console.error(ex.message);
-//   }
+try {
+    try {
+      throw new Error('oops');
+    }
+    finally {
+      console.log('finally');
+    }
+  }
+  catch (ex) {
+    console.error(ex.message);
+  }
